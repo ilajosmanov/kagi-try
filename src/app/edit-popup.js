@@ -86,8 +86,6 @@ export class EditPopup extends Popup {
           closed: (node) => {
             const isCancelButton = node.classList.contains("edit-menu__form-action--cancel")
 
-            console.log(isCancelButton)
-
             if (isCancelButton) {
               this.listeners.emit(events.CLOSED)
             }

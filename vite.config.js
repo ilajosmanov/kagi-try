@@ -1,10 +1,11 @@
-import nunjucks from 'vite-plugin-nunjucks'
+import nunjucks from "vite-plugin-nunjucks"
 
 const config = {
+  base: "/kagi-try/",
   plugins: [
     nunjucks({
       variables: {
-        'index.html': {
+        "index.html": {
           short: [
             "1 pound sweet Italian sausage",
             "3/4 pound lean ground beef",
@@ -15,7 +16,7 @@ const config = {
             "2 (6.5 ounce) cans canned tomato sauce",
             "1/2 cup water",
             "2 tablespoons white sugar",
-            "1 1/2 teaspoons dried basil leaves",
+            "1 1/2 teaspoons dried basil leaves"
           ],
           medium: [
             "1 pound sweet Italian sausage",
@@ -28,7 +29,7 @@ const config = {
             "1/2 cup water",
             "2 tablespoons white sugar",
             "1 1/2 teaspoons dried basil leaves",
-            "1/2 teaspoon fennel seeds",
+            "1/2 teaspoon fennel seeds"
           ],
           large: [
             "1 pound sweet Italian sausage",
@@ -52,7 +53,7 @@ const config = {
             "3/4 pound mozzarella cheese, sliced",
             "3/4 cup grated Parmesan cheese",
             "2 cloves garlic, crushed"
-          ],
+          ]
         }
       }
     })
