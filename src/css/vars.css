@@ -1,0 +1,8 @@
+:root {
+  --color-accent: rgb(255, 179, 25);
+  --color-primary: rgb(0, 0, 0);
+  --color-light: rgb(241, 241, 242);
+  --color-secondary: rgb(229, 229, 229);
+  --color-primary-dim_1: rgba(0, 0, 0, 0.1);
+  --active-bg-color: rgb(141, 193, 106);
+}

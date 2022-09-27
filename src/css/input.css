@@ -1,0 +1,25 @@
+.input {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.label {
+  display: block;
+  margin-bottom: 5px;
+
+  font-size: 14px;
+  font-family: 'lufgaregular', sans-serif;
+}
+
+
+.input input {
+  width: 100%;
+  background: #fff;
+
+  border-radius: 4px;
+  padding: 8px 10px;
+
+  box-shadow: none;
+  border: 2px solid var(--color-secondary);
+}

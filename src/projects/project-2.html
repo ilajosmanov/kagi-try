@@ -1,0 +1,115 @@
+<section class="project">
+  <h2 class="project__title">
+    Project 2
+  </h2>
+
+  <div class="widget-container">
+    <div class="widget">
+      <input
+        type="checkbox"
+        id="show-more"
+        class="visually-hidden widget__toggler"
+      >
+
+      <h3 class="widget__title">
+        Meat Lasagna Recipe
+      </h3>
+
+      <ul class="widget__list">
+        {% for ingredient in short %}
+          <li class="widget__item">
+            <label class="checkbox">
+              <input
+                type="checkbox"
+                class="widget__checkbox visually-hidden"
+              >
+              <span>{{ingredient}}</span>
+            </label>
+          </li>
+        {%endfor%}
+
+        <li class="widget__item widget__item--action">
+          <label
+            for="show-more"
+            class="widget__show-more-label"
+          >
+            <span class="widget__show-more-text widget__show-more-text--more">Show more</span>
+            <span class="widget__show-more-text widget__show-more-text--less">Show less</span>
+          </label>
+        </li>
+      </ul>
+    </div>
+
+    <div class="widget">
+      <input
+        type="checkbox"
+        id="show-more-medium"
+        class="visually-hidden widget__toggler"
+      >
+
+      <h3 class="widget__title">
+        Meat Lasagna Recipe
+      </h3>
+
+      <ul class="widget__list">
+        {% for ingredient in medium %}
+          <li class="widget__item">
+            <label class="checkbox">
+              <input
+                type="checkbox"
+                class="widget__checkbox visually-hidden"
+              >
+              <span>{{ingredient}}</span>
+            </label>
+          </li>
+        {%endfor%}
+
+        <li class="widget__item widget__item--action">
+          <label
+            for="show-more-medium"
+            class="widget__show-more-label"
+          >
+            <span class="widget__show-more-text widget__show-more-text--more">Show more</span>
+            <span class="widget__show-more-text widget__show-more-text--less">Show less</span>
+          </label>
+        </li>
+      </ul>
+    </div>
+
+    <div class="widget">
+      <input
+        type="checkbox"
+        id="show-more-3"
+        class="visually-hidden widget__toggler"
+      >
+
+      <h3 class="widget__title">
+        Meat Lasagna Recipe
+      </h3>
+
+      <ul class="widget__list">
+        {% for ingredient in large %}
+          <li class="widget__item">
+            <label class="checkbox">
+              <input
+                type="checkbox"
+                class="widget__checkbox visually-hidden"
+              >
+              <span>{{ingredient}}</span>
+            </label>
+          </li>
+        {%endfor%}
+
+        <li class="widget__item widget__item--action">
+          <label
+            for="show-more-3"
+            class="widget__show-more-label"
+          >
+            <span class="widget__show-more-text widget__show-more-text--more">Show more</span>
+            <span class="widget__show-more-text widget__show-more-text--less">Show less</span>
+          </label>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>

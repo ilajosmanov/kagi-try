@@ -1,0 +1,20 @@
+@font-face {
+  font-family: 'lufgabold';
+  src: url('./lufga-bold-webfont.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'lufgamedium';
+  src: url('./lufga-medium-webfont.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'lufgaregular';
+  src: url('./lufga-regular-webfont.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
