@@ -16,8 +16,6 @@ export class Form {
 
       this.#formElement.reset()
       this.clear()
-
-      console.log("asd")
     })
   }
 
@@ -34,7 +32,7 @@ export class Form {
   }
 
   #setButtonLabel() {
-    this.#formElement.submit.textContent = this.#editMode ? "Edit" : "Add"
+    this.#formElement.submit.textContent = this.#editMode ? "Save" : "Add"
   }
 
   #setValues(values) {
