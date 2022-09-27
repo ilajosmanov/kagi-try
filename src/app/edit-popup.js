@@ -183,8 +183,7 @@ export class EditPopup extends Popup {
                   classNames: ["widget__checkbox", "edit-popup__checkbox", "visually-hidden"],
                   attrs: {
                     type: "checkbox",
-                    checked: engine.selected,
-                    "data-id": engine.id
+                    checked: engine.selected
                   }
                 }),
                 new Node("span")
@@ -250,7 +249,7 @@ export class EditPopup extends Popup {
   /** Handlers **/
 
   #handleCheckbox(evt) {
-    const {id} = evt.target.dataset
+    const {id} = evt.target.closest(".popup__section-item").dataset
     const engine = {...this.#state.get(id)}
 
     engine.selected = !engine.selected

@@ -46,8 +46,8 @@ export class Popup {
   }
 
   open() {
-    this.#calculatePosition()
     this.#body.classList.add(this.#activeClass)
+    this.#calculatePosition()
 
     this.#hooks.opened()
   }
