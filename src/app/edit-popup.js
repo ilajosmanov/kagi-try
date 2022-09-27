@@ -274,10 +274,14 @@ export class EditPopup extends Popup {
 
     const listItem = evt.target.closest("li")
     if (!engine.selected) {
-      listItem.dataset.position = this.#listContainer.children.length + 1
+      const pos = this.#listContainer.children.length + 1
+      listItem.dataset.position = pos
+      listItem._data.position = pos
       this.#listContainer.appendChild(listItem)
     } else {
-      listItem.dataset.position = 0
+      const pos = 0
+      listItem.dataset.position = pos
+      listItem._data.position = pos
       this.#listContainer.insertBefore(listItem, this.#listContainer.firstChild)
     }
 
