@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/kagi-try/favicon-32x32.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kagi Search</title>
+    
+    <script type="module" crossorigin src="/kagi-try/assets/index.b564c8b6.js"></script>
+    <link rel="stylesheet" href="/kagi-try/assets/index.b88719f4.css">
+  </head>
+  <body>
+    <div id="app">
+      <section class="project">
+  <h2 class="project__title">
+    Project 1
+  </h2>
+
+  <nav class="nav">
+    <ul class="nav__list">
+      <li class="nav__item">
+        <a class="nav__link nav__link--web" href="https://kagi.com/search">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M9.23388 15.4889C12.6884 15.4889 15.4889 12.6884 15.4889 9.23388C15.4889 5.77934 12.6884 2.97888 9.23388 2.97888C5.77934 2.97888 2.97888 5.77934 2.97888 9.23388C2.97888 12.6884 5.77934 15.4889 9.23388 15.4889Z" stroke="currentColor" stroke-width="1.1586" stroke-miterlimit="10"></path> <path d="M15.4082 15.4077L21.1082 21.1077" stroke="currentColor" stroke-width="1.1586" stroke-miterlimit="10"></path> </svg>
+          Web
+        </a>
+      </li>
+      <li class="nav__item">
+        <a class="nav__link nav__link--images" href="https://kagi.com/images">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M22.68 18.771L18.159 12.018C17.856 11.565 17.346 11.307 16.8 11.337C16.251 11.364 15.771 11.67 15.513 12.153L15.024 13.068L15.681 14.304L16.536 12.696C16.629 12.522 16.791 12.495 16.857 12.492C16.923 12.489 17.088 12.501 17.196 12.663L21.717 19.416C21.834 19.59 21.771 19.752 21.738 19.812C21.705 19.875 21.606 20.019 21.396 20.019H2.44797C2.24097 20.019 2.14197 19.878 2.10897 19.818C2.07597 19.761 2.00997 19.602 2.11797 19.428L8.66697 8.87705C8.76597 8.71505 8.92197 8.69405 8.99397 8.69405H9.00897C9.07497 8.69705 9.24297 8.72105 9.33597 8.90105L14.142 18.03L15.168 17.49L14.28 15.804C14.283 15.804 14.286 15.804 14.289 15.801L13.626 14.544L13.614 14.523C13.605 14.511 13.596 14.496 13.587 14.481L12.663 12.726L10.641 8.89205L10.452 8.52905L10.362 8.35505C10.098 7.86005 9.60897 7.55105 9.04797 7.53005C8.48997 7.50905 7.97697 7.78505 7.68297 8.25905L1.13397 18.81C0.833972 19.293 0.821972 19.881 1.09797 20.376C1.37397 20.874 1.87797 21.171 2.44797 21.171H21.396C21.969 21.171 22.491 20.856 22.761 20.352C23.028 19.854 22.998 19.248 22.68 18.771Z" fill="currentColor"></path>
+            <path d="M16.893 6.74407C18.009 6.74407 18.915 5.83507 18.915 4.72207C18.915 3.60607 18.006 2.70007 16.893 2.70007C15.777 2.70007 14.871 3.60907 14.871 4.72207C14.868 5.83807 15.777 6.74407 16.893 6.74407Z" fill="currentColor"></path>
+          </svg>
+          Images
+        </a>
+      </li>
+      <li class="nav__item">
+        <a class="nav__link nav__link--videos" href="https://kagi.com/videos">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="13.6179" cy="4.91182" r="2.23529" stroke="currentColor" stroke-width="1.11765"></circle>
+            <circle cx="6.91182" cy="4.91182" r="2.23529" stroke="currentColor" stroke-width="1.11765"></circle>
+            <rect x="2.44118" y="9.38258" width="15.6471" height="11.1765" rx="1.67647" stroke="currentColor" stroke-width="1.11765"></rect>
+            <path d="M22.5587 11.0586C22.5587 10.8676 22.4612 10.6898 22.3001 10.5872C22.139 10.4846 21.9367 10.4714 21.7636 10.5522L18.4107 12.1169C18.2139 12.2087 18.0881 12.4062 18.0881 12.6233V17.3174C18.0881 17.5345 18.2139 17.732 18.4107 17.8238L21.7636 19.3885C21.9367 19.4693 22.139 19.4561 22.3001 19.3535C22.4612 19.2509 22.5587 19.0731 22.5587 18.8821V11.0586Z" stroke="currentColor" stroke-width="1.11765" stroke-linejoin="round"></path>
+          </svg>
+          Videos
+        </a>
+      </li>
+      <li class="nav__item">
+        <a class="nav__link nav__link--news" href="https://kagi.com/news">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20.1996 19.9259C19.5996 19.9259 19.0356 19.7009 18.5976 19.2869C18.1356 18.8489 17.8716 18.2309 17.8716 17.5949H19.0296C19.0296 17.9189 19.1586 18.2219 19.3956 18.4469C19.6326 18.6719 19.9416 18.7829 20.2656 18.7679C20.8776 18.7349 21.3756 18.1649 21.3756 17.4959V12.1649C21.3756 12.1289 21.3456 12.0959 21.3066 12.0959H20.2656V10.9379H21.3066C21.9816 10.9379 22.5336 11.4869 22.5336 12.1649V17.4959C22.5336 18.7919 21.5646 19.8599 20.3256 19.9229C20.2836 19.9259 20.2416 19.9259 20.1996 19.9259Z" fill="currentColor"></path>
+            <path d="M20.2958 19.926H4.04476C2.36476 19.926 0.999756 18.558 0.999756 16.881V5.545C0.999756 4.693 1.69276 4 2.54476 4H17.4848C18.3368 4 19.0298 4.693 19.0298 5.545V17.595H17.8718V5.545C17.8718 5.332 17.6978 5.158 17.4848 5.158H2.54476C2.33176 5.158 2.15776 5.332 2.15776 5.545V16.878C2.15776 17.919 3.00376 18.765 4.04476 18.765H20.2958V19.926Z" fill="currentColor"></path>
+            <path d="M10.8247 13.655H5.76074V14.813H10.8247V13.655Z" fill="currentColor"></path>
+            <path d="M14.2687 8.90002H5.76074V10.058H14.2687V8.90002Z" fill="currentColor"></path>
+          </svg>
+          News
+        </a>
+      </li>
+      <li class="nav__item">
+        <a class="nav__link nav__link--maps" href="https://kagi.com/maps">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M22.7489 21.393C22.4789 21.897 21.9569 22.209 21.3869 22.209H2.75095C2.18095 22.209 1.67395 21.912 1.39794 21.411C1.12194 20.913 1.13694 20.328 1.43994 19.845L5.59795 13.194L6.22495 14.376L2.42394 20.46C2.31295 20.634 2.37894 20.79 2.41194 20.85C2.44494 20.91 2.54395 21.051 2.75095 21.051H21.3869C21.5939 21.051 21.6929 20.907 21.7259 20.847C21.7589 20.784 21.8249 20.625 21.7079 20.451L17.8169 14.583L18.4349 13.416L22.6739 19.809C22.9889 20.286 23.0159 20.892 22.7489 21.393Z" fill="currentColor"></path>
+            <path d="M12.069 2.95799C9.32098 2.95799 7.08598 5.19299 7.08598 7.94099C7.08598 9.45299 8.79598 13.068 11.658 17.613C11.787 17.817 11.988 17.841 12.066 17.841C12.144 17.841 12.345 17.82 12.474 17.613C15.339 13.068 17.046 9.45299 17.046 7.94099C17.052 5.19299 14.817 2.95799 12.069 2.95799ZM12.069 18.996C11.502 18.996 10.983 18.708 10.68 18.228C8.90398 15.411 5.92798 10.329 5.92798 7.94099C5.92798 4.55399 8.68198 1.79999 12.069 1.79999C15.456 1.79999 18.21 4.55399 18.21 7.94099C18.21 10.332 15.234 15.414 13.458 18.228C13.155 18.711 12.636 18.996 12.069 18.996Z" fill="currentColor"></path>
+            <path d="M12.069 9.537C12.8659 9.537 13.512 8.89095 13.512 8.094C13.512 7.29705 12.8659 6.651 12.069 6.651C11.272 6.651 10.626 7.29705 10.626 8.094C10.626 8.89095 11.272 9.537 12.069 9.537Z" fill="currentColor"></path>
+            <path d="M12.0691 7.23002C11.5921 7.23002 11.2051 7.61702 11.2051 8.09402C11.2051 8.57102 11.5921 8.95802 12.0691 8.95802C12.5461 8.95802 12.9331 8.57102 12.9331 8.09402C12.9331 7.61702 12.5461 7.23002 12.0691 7.23002ZM12.0691 10.116C10.9531 10.116 10.0471 9.20702 10.0471 8.09402C10.0471 6.97802 10.9561 6.07202 12.0691 6.07202C13.1851 6.07202 14.0911 6.98102 14.0911 8.09402C14.0911 9.21002 13.1851 10.116 12.0691 10.116Z" fill="currentColor"></path>
+          </svg>
+          Maps
+        </a>
+      </li>
+
+      <li class="nav__item nav__item--more">
+        <button class="nav__btn nav__btn--more-btn trigger">
+          <span>
+            More
+          </span>
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path></svg>
+        </button>
+      </li>
+    </ul>
+  </nav>
+</section>
+
+      <section class="project">
+  <h2 class="project__title">
+    Project 2
+  </h2>
+
+  <div class="widget-container">
+    <div class="widget">
+      <input
+        type="checkbox"
+        id="show-more"
+        class="visually-hidden widget__toggler"
+      >
+
+      <h3 class="widget__title">
+        Meat Lasagna Recipe
+      </h3>
+
+      <ul class="widget__list">
+        
+          <li class="widget__item">
+            <label class="checkbox">
+              <input
+                type="checkbox"
+                class="widget__checkbox visually-hidden"
+              >
+              <span>1 pound sweet Italian sausage</span>
+            </label>
+          </li>
+        
+          <li class="widget__item">
+            <label class="checkbox">
+              <input
+                type="checkbox"
+                class="widget__checkbox visually-hidden"
+              >
+              <span>3/4 pound lean ground beef</span>
+            </label>
+          </li>
+        
+          <li class="widget__item">
+            <label class="checkbox">
+              <input
+                type="checkbox"
+                class="widget__checkbox visually-hidden"
+              >
+              <span>1/2 cup minced onion</span>
+            </label>
+          </li>
+        
+          <li class="widget__item">
+            <label class="checkbox">
+              <input
+                type="checkbox"
+                class="widget__checkbox visually-hidden"
+              >
+              <span>2 cloves garlic, crushed</span>
+            </label>
+          </li>
+        
+          <li class="widget__item">
+            <label class="checkbox">
+              <input
+                type="checkbox"
+                class="widget__checkbox visually-hidden"
+              >
+              <span>1 (28 ounce) can crushed tomatoes</span>
+            </label>
+          </li>
+        
+          <li class="widget__item">
+            <label class="checkbox">
+              <input
+                type="checkbox"
+                class="widget__checkbox visually-hidden"
+              >
+              <span>2 (6 ounce) cans tomato paste</span>
+            </label>
+          </li>
+        
+          <li class="widget__item">
+            <label class="checkbox">
+              <input
+                type="checkbox"
+                class="widget__checkbox visually-hidden"
+              >
+              <span>2 (6.5 ounce) cans canned tomato sauce</span>
+            </label>
+          </li>
+        
+          <li class="widget__item">
+            <label class="checkbox">
+              <input
+                type="checkbox"
+                class="widget__checkbox visually-hidden"
+              >
+              <span>1/2 cup water</span>
+            </label>
+          </li>
+        
+          <li class="widget__item">
+            <label class="checkbox">
+              <input
+                type="checkbox"
+                class="widget__checkbox visually-hidden"
+              >
+              <span>2 tablespoons white sugar</span>
+            </label>
+          </li>
+        
+          <li class="widget__item">
+            <label class="checkbox">
+              <input
+                type="checkbox"
+                class="widget__checkbox visually-hidden"
+              >
+              <span>1 1/2 teaspoons dried basil leaves</span>
+            </label>
+          </li>
+        
+
+        <li class="widget__item widget__item--action">
+          <label
+            for="show-more"
+            class="widget__show-more-label"
+          >
+            <span class="widget__show-more-text widget__show-more-text--more">Show more</span>
+            <span class="widget__show-more-text widget__show-more-text--less">Show less</span>
+          </label>
+        </li>
+      </ul>
+    </div>
+
+    <div class="widget">
+      <input
+        type="checkbox"
+        id="show-more-medium"
+        class="visually-hidden widget__toggler"
+      >
+
+      <h3 class="widget__title">
+        Meat Lasagna Recipe
+      </h3>
+
+      <ul class="widget__list">
+        
+          <li class="widget__item">
+            <label class="checkbox">
+              <input
+                type="checkbox"
+                class="widget__checkbox visually-hidden"
+              >
+              <span>1 pound sweet Italian sausage</span>
+            </label>
+          </li>
+        
+          <li class="widget__item">
+            <label class="checkbox">
+              <input
+                type="checkbox"
+                class="widget__checkbox visually-hidden"
+              >
+              <span>3/4 pound lean ground beef</span>
+            </label>
+          </li>
+        
+          <li class="widget__item">
+            <label class="checkbox">
+              <input
+                type="checkbox"
+                class="widget__checkbox visually-hidden"
+              >
+              <span>1/2 cup minced onion</span>
+            </label>
+          </li>
+        
+          <li class="widget__item">
+            <label class="checkbox">
+              <input
+                type="checkbox"
+                class="widget__checkbox visually-hidden"
+              >
+              <span>2 cloves garlic, crushed</span>
+            </label>
+          </li>
+        
+          <li class="widget__item">
+            <label class="checkbox">
+              <input
+                type="checkbox"
+                class="widget__checkbox visually-hidden"
+              >
+              <span>1 (28 ounce) can crushed tomatoes</span>
+            </label>
+          </li>
+        
+          <li class="widget__item">
+            <label class="checkbox">
+              <input
+                type="checkbox"
+                class="widget__checkbox visually-hidden"
+              >
+              <span>2 (6 ounce) cans tomato paste</span>
+            </label>
+          </li>
+        
+          <li class="widget__item">
+            <label class="checkbox">
+              <input
+                type="checkbox"
+                class="widget__checkbox visually-hidden"
+              >
+              <span>2 (6.5 ounce) cans canned tomato sauce</span>
+            </label>
+          </li>
+        
+          <li class="widget__item">
+            <label class="checkbox">
+              <input
+                type="checkbox"
+                class="widget__checkbox visually-hidden"
+              >
+              <span>1/2 cup water</span>
+            </label>
+          </li>
+        
+          <li class="widget__item">
+            <label class="checkbox">
+              <input
+                type="checkbox"
+                class="widget__checkbox visually-hidden"
+              >
+              <span>2 tablespoons white sugar</span>
+            </label>
+          </li>
+        
+          <li class="widget__item">
+            <label class="checkbox">
+              <input
+                type="checkbox"
+                class="widget__checkbox visually-hidden"
+              >
+              <span>1 1/2 teaspoons dried basil leaves</span>
+            </label>
+          </li>
+        
+          <li class="widget__item">
+            <label class="checkbox">
+              <input
+                type="checkbox"
+                class="widget__checkbox visually-hidden"
+              >
+              <span>1/2 teaspoon fennel seeds</span>
+            </label>
+          </li>
+        
+
+        <li class="widget__item widget__item--action">
+          <label
+            for="show-more-medium"
+            class="widget__show-more-label"
+          >
+            <span class="widget__show-more-text widget__show-more-text--more">Show more</span>
+            <span class="widget__show-more-text widget__show-more-text--less">Show less</span>
+          </label>
+        </li>
+      </ul>
+    </div>
+
+    <div class="widget">
+      <input
+        type="checkbox"
+        id="show-more-3"
+        class="visually-hidden widget__toggler"
+      >
+
+      <h3 class="widget__title">
+        Meat Lasagna Recipe
+      </h3>
+
+      <ul class="widget__list">
+        
+          <li class="widget__item">
+            <label class="checkbox">
+              <input
+                type="checkbox"
+                class="widget__checkbox visually-hidden"
+              >
+              <span>1 pound sweet Italian sausage</span>
+            </label>
+          </li>
+        
+          <li class="widget__item">
+            <label class="checkbox">
+              <input
+                type="checkbox"
+                class="widget__checkbox visually-hidden"
+              >
+              <span>3/4 pound lean ground beef</span>
+            </label>
+          </li>
+        
+          <li class="widget__item">
+            <label class="checkbox">
+              <input
+                type="checkbox"
+                class="widget__checkbox visually-hidden"
+              >
+              <span>1/2 cup minced onion</span>
+            </label>
+          </li>
+        
+          <li class="widget__item">
+            <label class="checkbox">
+              <input
+                type="checkbox"
+                class="widget__checkbox visually-hidden"
+              >
+              <span>2 cloves garlic, crushed</span>
+            </label>
+          </li>
+        
+          <li class="widget__item">
+            <label class="checkbox">
+              <input
+                type="checkbox"
+                class="widget__checkbox visually-hidden"
+              >
+              <span>1 (28 ounce) can crushed tomatoes</span>
+            </label>
+          </li>
+        
+          <li class="widget__item">
+            <label class="checkbox">
+              <input
+                type="checkbox"
+                class="widget__checkbox visually-hidden"
+              >
+              <span>2 (6 ounce) cans tomato paste</span>
+            </label>
+          </li>
+        
+          <li class="widget__item">
+            <label class="checkbox">
+              <input
+                type="checkbox"
+                class="widget__checkbox visually-hidden"
+              >
+              <span>2 (6.5 ounce) cans canned tomato sauce</span>
+            </label>
+          </li>
+        
+          <li class="widget__item">
+            <label class="checkbox">
+              <input
+                type="checkbox"
+                class="widget__checkbox visually-hidden"
+              >
+              <span>1/2 cup water</span>
+            </label>
+          </li>
+        
+          <li class="widget__item">
+            <label class="checkbox">
+              <input
+                type="checkbox"
+                class="widget__checkbox visually-hidden"
+              >
+              <span>2 tablespoons white sugar</span>
+            </label>
+          </li>
+        
+          <li class="widget__item">
+            <label class="checkbox">
+              <input
+                type="checkbox"
+                class="widget__checkbox visually-hidden"
+              >
+              <span>1 1/2 teaspoons dried basil leaves</span>
+            </label>
+          </li>
+        
+          <li class="widget__item">
+            <label class="checkbox">
+              <input
+                type="checkbox"
+                class="widget__checkbox visually-hidden"
+              >
+              <span>1/2 teaspoon fennel seeds</span>
+            </label>
+          </li>
+        
+          <li class="widget__item">
+            <label class="checkbox">
+              <input
+                type="checkbox"
+                class="widget__checkbox visually-hidden"
+              >
+              <span>1 teaspoon Italian seasoning</span>
+            </label>
+          </li>
+        
+          <li class="widget__item">
+            <label class="checkbox">
+              <input
+                type="checkbox"
+                class="widget__checkbox visually-hidden"
+              >
+              <span>11/2 teaspoons salt, divided or to taste</span>
+            </label>
+          </li>
+        
+          <li class="widget__item">
+            <label class="checkbox">
+              <input
+                type="checkbox"
+                class="widget__checkbox visually-hidden"
+              >
+              <span>1/4 teaspoon ground black pepper</span>
+            </label>
+          </li>
+        
+          <li class="widget__item">
+            <label class="checkbox">
+              <input
+                type="checkbox"
+                class="widget__checkbox visually-hidden"
+              >
+              <span>4 tablespoons chopped fresh parsley</span>
+            </label>
+          </li>
+        
+          <li class="widget__item">
+            <label class="checkbox">
+              <input
+                type="checkbox"
+                class="widget__checkbox visually-hidden"
+              >
+              <span>12 lasagna noodles</span>
+            </label>
+          </li>
+        
+          <li class="widget__item">
+            <label class="checkbox">
+              <input
+                type="checkbox"
+                class="widget__checkbox visually-hidden"
+              >
+              <span>16 ounces ricotta cheese</span>
+            </label>
+          </li>
+        
+          <li class="widget__item">
+            <label class="checkbox">
+              <input
+                type="checkbox"
+                class="widget__checkbox visually-hidden"
+              >
+              <span>1 egg</span>
+            </label>
+          </li>
+        
+          <li class="widget__item">
+            <label class="checkbox">
+              <input
+                type="checkbox"
+                class="widget__checkbox visually-hidden"
+              >
+              <span>3/4 pound mozzarella cheese, sliced</span>
+            </label>
+          </li>
+        
+          <li class="widget__item">
+            <label class="checkbox">
+              <input
+                type="checkbox"
+                class="widget__checkbox visually-hidden"
+              >
+              <span>3/4 cup grated Parmesan cheese</span>
+            </label>
+          </li>
+        
+          <li class="widget__item">
+            <label class="checkbox">
+              <input
+                type="checkbox"
+                class="widget__checkbox visually-hidden"
+              >
+              <span>2 cloves garlic, crushed</span>
+            </label>
+          </li>
+        
+
+        <li class="widget__item widget__item--action">
+          <label
+            for="show-more-3"
+            class="widget__show-more-label"
+          >
+            <span class="widget__show-more-text widget__show-more-text--more">Show more</span>
+            <span class="widget__show-more-text widget__show-more-text--less">Show less</span>
+          </label>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+    </div>
+
+    <div id="popups">
+      <div class="popup search-menu">
+  <button class="popup__action popup__action--top">
+    <span class="popup__icon" aria-hidden="true">
+      <svg width="18" height="18" viewBox="0 0 24 24" ><path d="M12 7c2.76 0 5 2.24 5 5 0 .65-.13 1.26-.36 1.83l2.92 2.92c1.51-1.26 2.7-2.89 3.43-4.75-1.73-4.39-6-7.5-11-7.5-1.4 0-2.74.25-3.98.7l2.16 2.16C10.74 7.13 11.35 7 12 7zM2 4.27l2.28 2.28.46.46C3.08 8.3 1.78 10.02 1 12c1.73 4.39 6 7.5 11 7.5 1.55 0 3.03-.3 4.38-.84l.42.42L19.73 22 21 20.73 3.27 3 2 4.27zM7.53 9.8l1.55 1.55c-.05.21-.08.43-.08.65 0 1.66 1.34 3 3 3 .22 0 .44-.03.65-.08l1.55 1.55c-.67.33-1.41.53-2.2.53-2.76 0-5-2.24-5-5 0-.79.2-1.53.53-2.2zm4.31-.78 3.15 3.15.02-.16c0-1.66-1.34-3-3-3l-.17.01z"></path></svg>
+    </span>
+    Hide Filters
+  </button>
+
+  <section class="popup__section popup__section--border">
+    <h3 class="popup__section-title">
+      Search with...
+    </h3>
+
+    <ul class="popup__section-list"></ul>
+
+    <p class="popup__section-item--empty-state">
+      Please add some engine..
+    </p>
+  </section>
+
+  <button class="popup__action popup__action--bottom popup__section--border button-customize trigger">
+    <span class="popup__icon">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34a.9959.9959 0 0 0-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"></path></svg>
+    </span>
+    Customize menu
+  </button>
+</div>
+
+      <div class="popup edit-menu">
+  <section class="popup__section">
+    <h3 class="popup__section-title">
+      Edit search menu
+    </h3>
+
+    <ul class="popup__section-list"></ul>
+    <p class="popup__section-item--empty-state">
+      Please add some engine..
+    </p>
+  </section>
+  <section class="popup__section popup__section--border">
+    <h3 class="popup__section-title">
+      Edit menu item
+    </h3>
+
+    <form class="edit-menu__form">
+      <label class="input">
+        <span class="label">
+          Search engine name
+        </span>
+        <input
+          type="text"
+          name="label"
+          placeholder="Example"
+          required
+        >
+      </label>
+
+      <label class="input">
+        <span class="label">
+          URL
+        </span>
+        <input
+          type="url"
+          name="href"
+          placeholder="https://example.com"
+          required
+        >
+      </label>
+
+      <label class="input">
+        <span class="label">
+          !Bang
+        </span>
+        <input
+          type="text"
+          name="bang"
+          placeholder="!ex"
+          pattern="^!.{1,}$"
+          title="!bang must start with ! and have at least 1 character"
+          required
+        >
+      </label>
+
+      <footer class="edit-menu__footer">
+        <button
+          class="edit-menu__form-action edit-menu__form-action--primary edit-menu__form-action--submit"
+          name="submit"
+        >
+          Add
+        </button>
+        <button
+          class="edit-menu__form-action edit-menu__form-action--cancel trigger"
+          type="button"
+        >
+          Cancel
+        </button>
+      </footer>
+    </form>
+  </section>
+</div>
+
+    </div>
+    
+  </body>
+</html>
