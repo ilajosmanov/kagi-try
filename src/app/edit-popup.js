@@ -127,8 +127,8 @@ export class EditPopup extends Popup {
         const input1 = element1.querySelector("input")
         const input2 = element2.querySelector("input")
 
-        const id1 = input1.dataset.id
-        const id2 = input2.dataset.id
+        const id1 = element1.dataset.id
+        const id2 = element2.dataset.id
 
         const engine1 = this.#state.get(id1)
         const engine2 = this.#state.get(id2)
@@ -289,7 +289,7 @@ export class EditPopup extends Popup {
   }
 
   #handleDelete(evt) {
-    const {id} = evt.target.closest(".popup__action").querySelector("input").dataset
+    const {id} = evt.target.closest(".popup__section-item").dataset
     const listItem = evt.target.closest("li")
 
     this.#state.delete(id)
